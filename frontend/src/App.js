@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Container, Row, Col, Button } from "reactstrap"
+
 
 import Person from'./Person';
 

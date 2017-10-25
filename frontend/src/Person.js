@@ -1,5 +1,7 @@
 import React from "react"
 
+import { Container, Row, Col, Button } from "reactstrap"
+
 
 class Person extends React.Component {
   constructor(props) {
@@ -53,10 +55,10 @@ class Person extends React.Component {
       		{this.state.showAge && ` is ${this.state.age} years old`}
 
       	</h3>
-      	<button onClick={this._toggleEmail}>Toggle Email</button> 
-      	<button onClick={this._toggleAge}>Toggle Age</button>      	     	
-      	<button onClick={this._incrementAge}>+</button>
-      	<button onClick={this._decrementAge}>-</button>
+      	<Button color="success" onClick={this._toggleEmail}>Toggle Email</Button> 
+      	<Button color="danger" onClick={this._toggleAge}>Toggle Age</Button>      	     	
+      	<Button color="danger" onClick={this._incrementAge}>+</Button>
+      	<Button color="danger" onClick={this._decrementAge}>-</Button>
       </div> 
 
       )
